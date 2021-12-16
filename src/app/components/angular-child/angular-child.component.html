@@ -1,0 +1,10 @@
+<div [ngStyle]="{'background-color': color}">
+    <form class="add-form" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+            <label for="text"></label>
+            <input type="text" name="messageInChild" [(ngModel)]="messageInChild" placeholder="Add message">
+        </div>
+        <input type="submit" value="Send message for parent" class="btn btn-block">
+    </form>
+    This is text from parent <br> {{textFromParent}}
+</div>

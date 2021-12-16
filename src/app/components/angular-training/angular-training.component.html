@@ -1,0 +1,9 @@
+<div class="play-container">
+    <label for="text">This message will be send to child component</label><br>
+    <input type="text" [(ngModel)]="myMessage"><br>
+    <label for="text"> This is message from child component</label>
+    <h4>{{messageFromChild}}</h4>
+    <div class="play-container-two">
+        <app-angular-child color="red" textFromParent="{{myMessage}}" (btnClick)="parentMethod($event)"></app-angular-child>
+    </div>
+</div>

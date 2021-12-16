@@ -1,0 +1,19 @@
+:host {
+    // wszystkie elementy np button, lub zbior buttonow w divie, w tym konkretnym divie są ustawiane jeden pod drugim
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.host>* {
+    margin-bottom: 20 px;
+}
+
+button {
+    margin: 10px;
+}
+
+kendo-buttongroup {
+    margin: 0;
+}

@@ -1,0 +1,18 @@
+<kendo-grid [kendoGridBinding]="products" [resizable]="true" [filter]="state.filter!" [filterable]="true" [groupable]="true" [group]="groupBy!" [sortable]="{ allowUnsort: true, mode: 'multiple'}" [pageable]="{ buttonCount: 3, pageSizes: [5,10,15] }" [pageSize]="5">
+    <kendo-grid-column-group title="Product">
+        <kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
+        <kendo-grid-column field="ProductName" title="Name"> </kendo-grid-column>
+        <kendo-grid-column field="Category.CategoryID" title="CategoryID"></kendo-grid-column>
+        <kendo-grid-column field="Category.CategoryName" title="Category"></kendo-grid-column>
+        <kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
+    </kendo-grid-column-group>
+</kendo-grid>
+
+<!--    kendo-grid-column
+        kendo-grid-column-group
+        [resizable]
+        [data]
+        [kendoGridBinding] - better to use it for filter etc purpose 
+        [filter]="state.filter!" - method to filter from back
+        
+        -->

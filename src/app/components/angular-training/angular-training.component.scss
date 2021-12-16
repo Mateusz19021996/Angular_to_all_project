@@ -1,0 +1,26 @@
+span {
+    font-weight: bold;
+    background: lightgray;
+    padding: .3em .8em;
+    cursor: pointer;
+}
+
+.play-container {
+    padding: 3em;
+    border: 1px solid lightgray;
+    margin-bottom: 1em;
+    input {
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+}
+
+.play-container-two {
+    padding: 3em;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 1em;
+    input {
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+}
